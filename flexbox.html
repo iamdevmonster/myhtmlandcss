@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .conatiner{
+            height: 644px;
+            width: 100%;
+            border:2px solid black;
+            /*intailozing container as a flexbox*/
+            display:flex;
+            /*some flex properties for flex conatainer*/
+            flex-direction: row;
+            /*yaha par kuch nahi hua kyuki ki flex direction by default row hota hai*/
+           /*  flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /* agar mera flexitem flex conatainer se bhar nikale lagta hai during responsive to prevent it we should use flex wrap; aur by default no wrap hi hota hai */
+          /*   flex-wrap: nowrap;*/
+            flex-wrap: wrap; 
+            /* flex-wrap: wrap-reverse; */
+            
+          /*   Agar hamko flex direction and wrap ko ek bar mai set karna ha tab we will use flexflow */
+         /*  flex-flow: row-reverse wrap; */
+         /*justify content properties*/
+         /* jab sare dabbo ko center karna ho center use kare */
+         justify-content: center;
+         /* jab dabbo ke bich mai space create karna ho but not at both end of conatiner then use space betweeen */
+         justify-content: space-between;
+         /* jab dabbo ke bich mai space create karna ho but at both end of conatiner then use space evenly */
+         justify-content: space-evenly;
+         /* jab bhi hum space around ko use karenge toh kisi bhi do dabbo ke bich mai do dabbo ki equal space aa jati hai */
+         justify-content: space-around;
+         /* align item ki propertes */
+         /* ye flex item ko vertically align kar  vetically center kar dega */
+         align-items: center;
+        /*  ye flex item ko flex conatner ke niche laa dega */
+         align-items: flex-end;
+        /*  abe yarr ye toh by difault hota hai */
+         align-items: flex-start;
+        /*  agar vertically strecth create karna hai toh align item mai strech ka use kare */
+       /*  align-items: stretch; */
+
+        }
+        .item{
+            background-color: tomato;
+            border: 2px solid turquoise;
+            margin: 10px;
+            padding:3px;
+            height:200px;
+            width:180px;
+        }
+        #item-1{
+             /* flex properties for flex items */
+         /* jab bhi humko ho sakta hai kisi flex item ko phale rakna ya hos akta hailisi ko badd mai rakhna   */ 
+        /*   order:3 */
+         /*  matlb jiska order jitna jayada wo particular item sabse piche ya bade order  badd mai dekhege aur chote items phake dinkkahnge*/
+        /*  ahar hamko kisi bhi flex item ko badana hai tab ham flex grow ka use jarenge */
+        /*  jiski bhi flex shrink ki value jitne kam hoge uthna ji jyada wo flex item jayada shirnk hoga */
+       /*  flexgrow mai jiski jat=yada value utna hi bada jiski jitne chotii value wo utna hi chotta */
+        }⁡⁣⁣⁡
+        
+        
+        #item-2{
+         flex-grow: 3;
+       ⁡⁣⁢⁣ /*  jab ham flexdirection ko row set karenge toh flex basis har flex item ke width ko control karega */⁡
+        /* ⁡⁢⁣⁣ jab ham flexdirection ko coloum  set karenge toh flex basis har flex item ke height ko control karega⁡ */
+        }
+        #item-3{
+        ⁡⁣⁢⁣   /*  lets use flex shorthand */
+          /* flex: flexgrow flexshrink flexbasis */⁡
+          order: 100;
+          flex-grow: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+       
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+       <!--  <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fivth box</div>
+        <div class="item" id="item-6">sixth box</div> -->
+    </div>
+</body>
+</html>

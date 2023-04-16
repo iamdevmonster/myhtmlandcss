@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector and desingn</title>
+    <style>
+    .container{
+        background-color: rgb(20, 196, 128);
+        border:8px solid rgb(128, 94, 0);
+        padding:34px;
+        margin:34px auto;
+        width: 500px;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+
+    }
+    /*psuedo selector for links*/
+    a:hover{
+        color: cornsilk;
+        background-color: black;
+    }
+     a:visited{
+        color: rgb(255, 0, 179);
+        /*background-color: brown;*/
+     }
+     a:active{
+        color:blue;
+     }
+    .btn{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        background-color: rgb(121, 151, 13);
+        padding:9px;
+        cursor: pointer;
+        font-size:small;
+        border-radius: 23px;
+    }
+   .btn:hover  /*psuedo selector for button*/
+   {
+    color: red;
+    background-color: darkorchid;
+    border:5px solid black;
+   }
+   .btn:active{
+    color: gold;
+
+   }
+   
+    </style>
+</head>
+<body>
+     <div class="container" id="contain1">
+        <h3>This is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus debitis laudantium deserunt illum ea laboriosam reprehenderit asperiores! Quam iste blanditiis consectetur ab dolorem inventore veniam quis esse sed nesciunt odio assumenda eius, corrupti doloribus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, atque! Iure, labore!</p>
+        <a href="https://www.w3schools.com/css/" class="btn">Read more</a>
+        <button class="btn" id="b">Contact us</button>
+     </div>
+</body>
+</html>

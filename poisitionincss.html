@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in css</title>
+    <style>
+        .conatiner{
+            border: 4px solid rgb(37, 35, 39);
+            height:1234px;
+
+        }
+        .box{
+            border:3px solid hotpink;
+            display:inline-block;
+            padding:4px 4px;
+            width: 171px;
+            height: 171px;px;
+        }
+        #box3{
+            /*jab bhi relative use karte hai as a position then wo particular elelmrnt hamesha apne normal poisition ke hisab se shift hoga
+            position:relative;*/
+            /*when poistion is absolute then the ele may change its top left or any position accorrding to his parent class*/
+            /*An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).*/
+            
+            /*top:34px;*/
+            position:fixed;
+            right:40px;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+    </div>
+ 
+</body>
+</html>

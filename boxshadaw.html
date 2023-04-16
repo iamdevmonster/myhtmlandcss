@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+    <style>
+      .conatainer{
+        display:flex;
+      }
+      .box{
+        padding:23px 12px;
+        margin: 23px 12px;
+        /* border:2px solid red; */
+        background-color: aqua;
+        /*         syntaxes of box shadaow */
+        /* box-shadow: 10px 12px green; */
+       /*  boxshadow:X-offset Y-offset  color */
+       /* ​‌‌‍ 𝗯𝗼𝘅-𝘀𝗵𝗮𝗱𝗼𝘄: 𝘅-𝗼𝗳𝗳𝘀𝗲𝘁 𝘆-𝗼𝗳𝗳𝘀𝗲𝘁 𝗯𝗹𝘂𝗿𝗼𝗳𝗳𝘀𝗲𝘁 𝗰𝗼𝗹𝗼𝗿;
+         𝗯𝗼𝘅-𝘀𝗵𝗮𝗱𝗼𝘄: 𝘅-𝗼𝗳𝗳𝘀𝗲𝘁 𝘆𝗼𝗳𝗳𝘀𝗲𝘁 𝗯𝗹𝘂𝗿𝗼𝗳𝗳𝘀𝗲𝘁 𝘀𝗽𝗿𝗲𝗮𝗱 𝗼𝗳𝗳𝘀𝗲𝘁 𝗰𝗼𝗹𝗼𝗿 ;​ */
+
+      /* ⁡⁣⁢⁣ agar box shardow mai x and y offsett negative mai use karte hai tab wo upar nahi to left mai chala jayega⁡ */
+       /*  box-shadow: 10px 12px 3px greenyellow; */
+      /*  box-shadow: 10px 12px 3px 3px green; */
+      box-shadow: inset 10px 12px green;
+      /* ​‌‍‌‍if i want mulitple shadaow in a single box​ */
+      box-shadow: 3px 5px red,4px 6px green;
+
+        
+      }
+      .box h2{
+        text-shadow: 2px 3px rgb(160, 27, 105);
+      }
+    </style>
+</head>
+<body>
+    <div class="conatainer">
+    <div class="box" id="box-1">
+      <h2>CSS course</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo nostrum quisquam optio? Repellendus quas hic nobis voluptas consequatur. Nam cum a commodi beatae sed iusto laboriosam quam est ipsa? Non reprehenderit officiis soluta!</p>
+    </div>
+    <div class="box" id="box-2">
+        <h2>WebDEv course</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, doloribus velit. Illo et molestiae magnam minima corporis deserunt fugit ad error quia eaque officia saepe, quo cupiditate consequatur corrupti similique qui. Placeat, ea eum.</p>
+    </div>
+    <div class="box" id="box-3">
+        <h2>Javascript course</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim id cupiditate debitis aut cum mollitia deleniti inventore ratione suscipit? Animi voluptas temporibus itaque omnis aliquam autem sapiente cum ab fugit! Maiores laboriosam suscipit delectus.
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property in css</title>
+    <style>
+    img{
+        width: 111px;
+        display:block;
+        margin:auto;
+    }
+    header{
+        border: 5px solid green;
+        width: 44%;
+        margin: auto;
+    }
+    h3{
+        text-align: center;
+    }
+    /*display inline kamtlb hota hai jitna bada hoga utni jagah lele ga aur display block ko app uski width ya margin set karke center ka sakte hai*/
+    .box{
+        border:3px solid red;
+        margin:4px;
+        padding:3px 3px;
+        background-color: grey;
+       display:inline-block;  /*jab hamko display mai block tha tho ham width aur margin adjust kar lete thi center bhi kar sakte thi but inline mainahi alllowed tha but agar hamra display inline block ho toh hum inline ko width ya margin set kar sakte hai*/
+       width:30%;
+       box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+   <header>
+    <img src="cssp.webp" alt="">  
+    <h3>This is my website</h3>
+   </header>
+   <div class="box">
+    <h3>this is heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi nihil dolorem! Architecto saepe ullam eum itaque magni illum enim impedit vitae aperiam quidem. Illum veritatis, incidunt officia nihil dignissimos vel? Pariatur tenetur minus at optio, deleniti debitis possimus sunt! Et exercitationem eveniet consequuntur quo.</p>
+   </div>
+   <div class="box">
+    <h3>this is heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi nihil dolorem! Architecto saepe ullam eum itaque magni illum enim impedit vitae aperiam quidem. Illum veritatis, incidunt officia nihil dignissimos vel? Pariatur tenetur minus at optio, deleniti debitis possimus sunt! Et exercitationem eveniet consequuntur quo.</p>
+   </div>
+   <div class="box">
+    <h3>this is heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi nihil dolorem! Architecto saepe ullam eum itaque magni illum enim impedit vitae aperiam quidem. Illum veritatis, incidunt officia nihil dignissimos vel? Pariatur tenetur minus at optio, deleniti debitis possimus sunt! Et exercitationem eveniet consequuntur quo.</p>
+   </div>
+</body>
+</html>

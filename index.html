@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box modeling</title>
+    <style>
+       .container{
+        background-color: blueviolet;
+        border:5px solid rgb(60, 255, 0);
+       /* padding-left: 9px;
+        padding-bottom: 9px;
+        padding-top: 9px;
+       padding-right: 9px;*/
+       /*padding=to right bottom left*/
+      /* padding: 9px 9px 9px;*/
+       /*padding or margin:y(top/bottom) x(left/right)*/
+       padding: 9px 9px;
+      /* margin-left: 9px;
+       margin-bottom: 10px;
+       margin-top: 10px;
+       margin-right: 10px;*/
+       margin:10px 10px 10px 9px;
+       border-radius: 23px;
+       width:233px;
+       margin: 20px auto;
+       box-sizing: border-box;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta exercitationem sapiente nemo magnam explicabo optio earum inventore eum dolor quod numquam, architecto, tenetur quis eos sit iusto aut expedita laudantium.</p>
+    </div>
+    <div class="container">
+        <h3>This is second heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta exercitationem sapiente nemo magnam explicabo optio earum inventore eum dolor quod numquam, architecto, tenetur quis eos sit iusto aut expedita laudantium.</p>
+    </div>
+    <div class="container">
+        <h3>This is third heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta exercitationem sapiente nemo magnam explicabo optio earum inventore eum dolor quod numquam, architecto, tenetur quis eos sit iusto aut expedita laudantium.</p>
+    </div>
+</body>
+</html>
